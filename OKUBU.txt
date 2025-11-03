@@ -1,0 +1,29 @@
+================================================================================
+                        KAFE OTOMASYON SİSTEMİ
+                            HIZLI BAŞLANGIÇ
+================================================================================
+
+BAŞLATMAK İÇİN:
+===============
+1. "BAŞLAT.bat" dosyasına çift tıklayın
+2. Program tarayıcınızda otomatik açılacak
+
+İLK GİRİŞ:
+==========
+Kullanıcı Adı: admin
+Şifre: admin123
+
+⚠️ İlk girişten sonra şifrenizi değiştirin!
+
+DETAYLI BİLGİ:
+==============
+"KURULUM_VE_KULLANIM.txt" dosyasını okuyun
+
+DESTEK:
+=======
+Sorun yaşarsanız geliştiriciye ulaşın.
+
+================================================================================
+İYİ KULANIMLAR!
+================================================================================
+

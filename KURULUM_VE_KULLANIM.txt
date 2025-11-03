@@ -1,0 +1,194 @@
+================================================================================
+                    KAFE OTOMASYON SİSTEMİ v1.2
+                   KURULUM VE KULLANIM KILAVUZU
+================================================================================
+
+İÇİNDEKİLER:
+-------------
+1. Sistem Gereksinimleri
+2. Kurulum Adımları
+3. İlk Çalıştırma
+4. Yazıcı Kurulumu
+5. Ağ Üzerinden Kullanım (Çoklu Bilgisayar)
+6. Yedekleme ve Geri Yükleme
+7. Sorun Giderme
+8. Destek
+
+================================================================================
+1. SİSTEM GEREKSİNİMLERİ
+================================================================================
+
+✓ Windows 10 veya üzeri (64-bit)
+✓ En az 2 GB RAM
+✓ 500 MB boş disk alanı
+✓ .NET Runtime YÜKLÜ DEĞİLDİR - Programa dahildir!
+
+================================================================================
+2. KURULUM ADIMLARI
+================================================================================
+
+ADIM 1: Klasörü Kopyalayın
+---------------------------
+Bu klasörün tamamını istediğiniz bir konuma kopyalayın.
+Önerilen konum: C:\KafeOtomasyon\
+
+ÖNEMLİ: Klasör adında Türkçe karakter olmamasına dikkat edin!
+
+ADIM 2: Güvenlik Ayarları
+--------------------------
+İlk çalıştırmada Windows Defender uyarısı çıkabilir.
+- "Ek bilgi" veya "More info" tıklayın
+- "Yine de çalıştır" veya "Run anyway" seçin
+
+================================================================================
+3. İLK ÇALIŞTIRMA
+================================================================================
+
+Program Başlatma:
+-----------------
+1. "BAŞLAT.bat" dosyasına çift tıklayın
+2. Program otomatik olarak tarayıcınızda açılacak
+3. Varsayılan adres: http://localhost:5112
+
+İlk Giriş Bilgileri:
+--------------------
+Kullanıcı Adı: admin
+Şifre: admin123
+
+⚠️ ÖNEMLİ: İlk girişten sonra şifrenizi mutlaka değiştirin!
+
+================================================================================
+4. YAZICI KURULUMU
+================================================================================
+
+Otomatik Yazıcı Yönlendirme Sistemi
+------------------------------------
+Sistem, siparişleri kategorilerine göre otomatik yazıcılara gönderir:
+
+Yazıcı İsimleri (Windows'ta):
+------------------------------
+✓ BAR      → Sıcak/Soğuk içecekler
+✓ MUTFAK   → Yiyecekler ve tatlılar
+✓ NARGİLE  → Nargile siparişleri
+✓ KASA     → Ödeme fişleri
+
+Yazıcıları Yapılandırma:
+------------------------
+1. Denetim Masası > Aygıtlar ve Yazıcılar
+2. Yazıcıya sağ tıklayın > "Yazıcı özellikleri"
+3. Yazıcı adını yukarıdaki isimlerle değiştirin
+
+Termal Yazıcı Ayarları:
+-----------------------
+- Kağıt boyutu: 80mm (genişlik)
+- Otomatik boy ayarı: Açık
+
+Detaylı bilgi için: PRINTER_SETUP.md dosyasına bakın
+
+================================================================================
+5. AĞ ÜZERİNDEN KULLANIM (ÇOKLU BİLGİSAYAR)
+================================================================================
+
+Sunucu Bilgisayar (Ana Bilgisayar):
+-----------------------------------
+1. Windows Güvenlik Duvarı ayarlarını açın
+2. Port 5112'yi açın (Gelen Bağlantılar)
+
+İstemci Bilgisayarlar (POS Terminalleri):
+-----------------------------------------
+1. Tarayıcıyı açın
+2. Adres çubuğuna: http://SUNUCU-IP:5112
+   Örnek: http://192.168.1.100:5112
+
+Sunucu IP Adresini Bulma:
+--------------------------
+Sunucu bilgisayarda CMD'yi açın ve yazın:
+  ipconfig
+
+"IPv4 Adresi" yazısının yanındaki numarayı kullanın.
+
+Detaylı bilgi için: MULTI_COMPUTER_SETUP.md dosyasına bakın
+
+================================================================================
+6. YEDEKLEME VE GERİ YÜKLEME
+================================================================================
+
+Veritabanı Yedekleme:
+---------------------
+1. Programı kapatın
+2. "cafe.db" dosyasını kopyalayın
+3. Güvenli bir yere kaydedin (USB, bulut vb.)
+
+Yedekleme Önerisi:
+- Günlük: Her gün sonunda
+- Haftalık: USB'ye kopyalayın
+- Aylık: Bulut depolamaya yükleyin
+
+Geri Yükleme:
+-------------
+1. Programı kapatın
+2. Yedek "cafe.db" dosyasını program klasörüne kopyalayın
+3. Eski dosyanın üzerine yazın
+4. Programı başlatın
+
+================================================================================
+7. SORUN GİDERME
+================================================================================
+
+Program Açılmıyor:
+------------------
+✓ Antivirus programınızı kontrol edin
+✓ Windows Defender'dan izin verin
+✓ Başka bir program 5112 portunu kullanıyor olabilir
+
+Tarayıcı Açılmıyor:
+-------------------
+✓ Manuel olarak açın: http://localhost:5112
+✓ Chrome, Edge veya Firefox kullanın
+
+Yazıcı Yazdırmıyor:
+-------------------
+✓ Yazıcı isimlerini kontrol edin (BAR, MUTFAK, NARGİLE, KASA)
+✓ Yazıcıların çevrimiçi olduğunu doğrulayın
+✓ Tarayıcıda pop-up engellemeyi kapatın
+
+Veriler Kayboldu:
+-----------------
+✓ cafe.db dosyasının silinmediğini kontrol edin
+✓ Yedekten geri yükleyin
+✓ cafe.db-wal ve cafe.db-shm dosyalarına dokunmayın
+
+Ağda Bağlanılamıyor:
+--------------------
+✓ Güvenlik duvarı ayarlarını kontrol edin
+✓ Bilgisayarların aynı ağda olduğundan emin olun
+✓ Sunucu IP adresini doğrulayın
+
+================================================================================
+8. ÖNEMLİ NOTLAR
+================================================================================
+
+✓ Program çalışırken cafe.db dosyasını silmeyin/kopyalamayın
+✓ Düzenli yedekleme yapın
+✓ Şifrelerinizi güvende tutun
+✓ Güncellemeler için geliştiriciyle iletişime geçin
+
+================================================================================
+9. DESTEK VE İLETİŞİM
+================================================================================
+
+Teknik destek için geliştiriciye ulaşın.
+
+Program hakkında:
+- Versiyon: 1.2
+- Platform: ASP.NET Core 9.0
+- Veritabanı: SQLite
+- Lisans: Özel Müşteri Lisansı
+
+================================================================================
+
+Bu dokümantasyonu okuduğunuz için teşekkür ederiz!
+Başarılı satışlar dileriz.
+
+================================================================================
+

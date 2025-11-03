@@ -1,0 +1,117 @@
+================================================================================
+                        KAFE OTOMASYON SİSTEMİ
+                           VERSİYON BİLGİSİ
+================================================================================
+
+Program Adı:    Kafe Otomasyon Sistemi
+Versiyon:       1.2
+Derleme Tarihi: 2025-10-28
+Platform:       Windows 64-bit
+Framework:      .NET 9.0 (Self-Contained)
+
+================================================================================
+ÖZELLİKLER:
+================================================================================
+
+✓ Masa Yönetimi
+  - Masa durumu takibi (Boş/Dolu/Rezerve)
+  - Çoklu sipariş desteği
+  - Anlık masa durumu görüntüleme
+
+✓ Sipariş Yönetimi
+  - POS ekranı ile hızlı sipariş
+  - Kategori bazlı ürün yönetimi
+  - Sipariş iptal/düzenleme
+  - Garson bazlı sipariş takibi
+
+✓ Otomatik Yazıcı Yönlendirme
+  - BAR: Sıcak/Soğuk içecekler
+  - MUTFAK: Yiyecekler ve tatlılar
+  - NARGİLE: Nargile siparişleri
+  - KASA: Ödeme fişleri
+  - 80mm termal yazıcı desteği
+
+✓ Ödeme ve Adisyon
+  - Nakit/Kart/Karma ödeme
+  - İskonto uygulama (% veya tutar)
+  - Otomatik hesap yazdırma
+  - Para üstü hesaplama
+
+✓ Raporlama
+  - Günlük/Haftalık/Aylık raporlar
+  - Özel tarih aralığı raporları
+  - Ürün bazlı satış analizi
+  - Garson performans takibi
+  - İptal edilen siparişler raporu
+
+✓ Ürün ve Kategori Yönetimi
+  - Kategori: Sıcak İçecekler
+  - Kategori: Soğuk İçecekler
+  - Kategori: Yiyecekler
+  - Kategori: Tatlılar
+  - Kategori: Nargile
+  - Sınırsız ürün ekleme
+  - Fiyat güncelleme
+
+✓ Kullanıcı Yönetimi
+  - Admin: Tam yetki
+  - Garson: Sipariş alma yetkisi
+  - Şifre değiştirme
+  - Kullanıcı bazlı işlem logları
+
+✓ Çoklu Bilgisayar Desteği
+  - Ağ üzerinden erişim
+  - Merkezi veritabanı
+  - Sınırsız POS terminali
+  - Gerçek zamanlı senkronizasyon
+
+✓ Güvenlik
+  - Oturum bazlı kimlik doğrulama
+  - Rol bazlı yetkilendirme
+  - Güvenli şifre saklama
+
+================================================================================
+TEKNİK DETAYLAR:
+================================================================================
+
+Backend:        ASP.NET Core MVC 9.0
+Frontend:       Bootstrap 5, jQuery
+Veritabanı:     SQLite 3
+Dağıtım:        Self-Contained Single File
+Boyut:          ~150 MB (tüm bağımlılıklarla)
+
+Sistem Gereksinimleri:
+- Windows 10/11 (64-bit)
+- 2 GB RAM (minimum)
+- 500 MB Disk Alanı
+- .NET Runtime GEREKLİ DEĞİL (programa dahil)
+
+================================================================================
+GÜNCELLENMİŞ ÖZELLİKLER (v1.2):
+================================================================================
+
+✓ 80mm termal yazıcı formatı desteği
+✓ Otomatik yazıcı yönlendirme sistemi
+✓ Sipariş durumu Türkçeleştirilmesi
+✓ "Teslim Edilenler" raporlama sistemi
+✓ Kategori bazlı yazıcı eşleştirme
+✓ Geliştirilmiş kullanıcı arayüzü
+✓ Performans iyileştirmeleri
+✓ Hata düzeltmeleri
+
+================================================================================
+DESTEK:
+================================================================================
+
+Teknik destek ve güncellemeler için geliştiriciye ulaşın.
+
+================================================================================
+LİSANS:
+================================================================================
+
+© 2025 - Tüm hakları saklıdır.
+Bu yazılım, belirtilen müşteri için özel olarak geliştirilmiştir.
+İzinsiz çoğaltma, dağıtım veya kullanım yasaktır.
+
+================================================================================
+
